@@ -1,248 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"></xs:schema>
-<Các Bệnh Nhân>
-  <Bệnh Nhân>
-    <MA_LK>
-      123123
-    </MA_LK>
-    <STT>
-      1
-    </STT>
-    <MA_BN>
-      123123
-    </MA_BN>
-    <HO_TEN>
-      NGUYỄN VĂN NỘI KHOA
-    </HO_TEN>
-    <NGAY_SINH>
-      34820
-    </NGAY_SINH>
-    <GIOI_TINH>
-      Nam
-    </GIOI_TINH>
-    <DIA_CHI>
-      27 phố Hàng Đậu, phường Trúc Bạch, Quận Ba Đình, Thành phố Hà Nội
-    </DIA_CHI>
-    <MA_THE>
-      HS1231231222222 
-    </MA_THE>
-    <MA_DKBD>
-      1000
-    </MA_DKBD>
-    <GT_THE_TU>
-      34820
-    </GT_THE_TU>
-    <GT_THE_DEN>
-      34820
-    </GT_THE_DEN>
-    <MIEN_CUNG_CT>
-      34820
-    </MIEN_CUNG_CT>
-    <TEN_BENH>
-      điên khùng
-    </TEN_BENH>
-    <MA_BENH>
-      22222
-    </MA_BENH>
-    <MA_BENHKHAC>
-      22222
-    </MA_BENHKHAC>
-    <MA_LYDO_VVIEN>
-      Đúng tuyến
-    </MA_LYDO_VVIEN>
-    <MA_NOI_CHUYEN>
-      12345
-    </MA_NOI_CHUYEN>
-    <MA_TAI_NAN>
-      1
-    </MA_TAI_NAN>
-    <NGAY_VAO>
-      201505010000
-    </NGAY_VAO>
-    <NGAY_RA>
-      201505120000
-    </NGAY_RA>
-    <SO_NGAY_DTRI>
-      11
-    </SO_NGAY_DTRI>
-    <KET_QUA_DTRI>
-      Tử vong
-    </KET_QUA_DTRI>
-    <TINH_TRANG_RV>
-      Chuyển viện
-    </TINH_TRANG_RV>
-    <NGAY_TTOAN>
-      201505120000
-    </NGAY_TTOAN>
-    <T_THUOC>
-      345.679
-    </T_THUOC>
-    <T_VTYT>
-      345.679
-    </T_VTYT>
-    <T_TONGCHI>
-      345.679
-    </T_TONGCHI>
-    <T_BNTT>
-      345.679
-    </T_BNTT>
-    <T_BNCCT>
-      345.679
-    </T_BNCCT>
-    <T_BHTT>
-      345.679
-    </T_BHTT>
-    <T_NGUONKHAC>
-      345.679
-    </T_NGUONKHAC>
-    <T_NGOAIDS>
-      345.679
-    </T_NGOAIDS>
-    <NAM_QT>
-      2000
-    </NAM_QT>
-    <THANG_QT>
-      12
-    </THANG_QT>
-    <MA_LOAI_KCB>
-      Khám bệnh
-    </MA_LOAI_KCB>
-    <MA_KHOA>
-      123
-    </MA_KHOA>
-    <MA_CSKCB>
-      123
-    </MA_CSKCB>
-    <MA_KHUVUC>
-      123
-    </MA_KHUVUC>
-    <MA_PTTT_QT>
-      123
-    </MA_PTTT_QT>
-    <CAN_NANG>
-      123
-    </CAN_NANG>
-  </Bệnh Nhân>
-  <Bệnh Nhân>
-    <MA_LK>
-      123123
-    </MA_LK>
-    <STT>
-      1
-    </STT>
-    <MA_BN>
-      123123
-    </MA_BN>
-    <HO_TEN>
-      NGUYỄN THỊ NGOẠI KHOA
-    </HO_TEN>
-    <NGAY_SINH>
-      34821
-    </NGAY_SINH>
-    <GIOI_TINH>
-      Nam
-    </GIOI_TINH>
-    <DIA_CHI>
-      28 phố Hàng Đậu, phường Trúc Bạch, Quận Ba Đình, Thành phố Hà Nội
-    </DIA_CHI>
-    <MA_THE>
-      HS1231231222222 
-    </MA_THE>
-    <MA_DKBD>
-      1000
-    </MA_DKBD>
-    <GT_THE_TU>
-      34820
-    </GT_THE_TU>
-    <GT_THE_DEN>
-      34820
-    </GT_THE_DEN>
-    <MIEN_CUNG_CT>
-      34820
-    </MIEN_CUNG_CT>
-    <TEN_BENH>
-      điên khùng
-    </TEN_BENH>
-    <MA_BENH>
-      22222
-    </MA_BENH>
-    <MA_BENHKHAC>
-      22222
-    </MA_BENHKHAC>
-    <MA_LYDO_VVIEN>
-      Đúng tuyến
-    </MA_LYDO_VVIEN>
-    <MA_NOI_CHUYEN>
-      12345
-    </MA_NOI_CHUYEN>
-    <MA_TAI_NAN>
-      1
-    </MA_TAI_NAN>
-    <NGAY_VAO>
-      201505010000
-    </NGAY_VAO>
-    <NGAY_RA>
-      201505120000
-    </NGAY_RA>
-    <SO_NGAY_DTRI>
-      11
-    </SO_NGAY_DTRI>
-    <KET_QUA_DTRI>
-      Tử vong
-    </KET_QUA_DTRI>
-    <TINH_TRANG_RV>
-      Chuyển viện
-    </TINH_TRANG_RV>
-    <NGAY_TTOAN>
-      201505120000
-    </NGAY_TTOAN>
-    <T_THUOC>
-      345.679
-    </T_THUOC>
-    <T_VTYT>
-      345.679
-    </T_VTYT>
-    <T_TONGCHI>
-      345.679
-    </T_TONGCHI>
-    <T_BNTT>
-      345.679
-    </T_BNTT>
-    <T_BNCCT>
-      345.679
-    </T_BNCCT>
-    <T_BHTT>
-      345.679
-    </T_BHTT>
-    <T_NGUONKHAC>
-      345.679
-    </T_NGUONKHAC>
-    <T_NGOAIDS>
-      345.679
-    </T_NGOAIDS>
-    <NAM_QT>
-      2000
-    </NAM_QT>
-    <THANG_QT>
-      12
-    </THANG_QT>
-    <MA_LOAI_KCB>
-      Khám bệnh
-    </MA_LOAI_KCB>
-    <MA_KHOA>
-      123
-    </MA_KHOA>
-    <MA_CSKCB>
-      123
-    </MA_CSKCB>
-    <MA_KHUVUC>
-      123
-    </MA_KHUVUC>
-    <MA_PTTT_QT>
-      123
-    </MA_PTTT_QT>
-    <CAN_NANG>
-      123
-    </CAN_NANG>
-  </Bệnh Nhân>
-</Các Bệnh Nhân>
+<Cac_Benh_Nhan>
+    <Benh_Nhan>
+        <MA_LK class="code" type="string_100">LK123122</MA_LK>
+        <STT class="number" type="int_10">1</STT>
+        <MA_BN class="code" type="string_100">BN123123</MA_BN>
+        <HO_TEN class="detail" type="string_255">NGUYỄN VĂN NỘI KHOA</HO_TEN>
+        <NGAY_SINH class="time" type="year_month_day">20200101</NGAY_SINH>
+        <GIOI_TINH class="detail" type="selection_1">1</GIOI_TINH>
+        <DIA_CHI class="detail" type="string_1024">27 phố Hàng Đậu, phường Trúc Bạch, Quận Ba Đình, Thành phố Hà Nội</DIA_CHI>
+        <MA_THE class="code" type="string_n">HS1231231222222 </MA_THE>
+        <MA_DKBD class="code" type="string_n">DKBD1000</MA_DKBD>
+        <GT_THE_TU class="time" type="year_month_day">20001203</GT_THE_TU>
+        <GT_THE_DEN class="time" type="year_month_day">20001203</GT_THE_DEN>
+        <MIEN_CUNG_CT class="time" type="year_month_day">20001204</MIEN_CUNG_CT>
+        <TEN_BENH class="detail" type="string_n">điên khùng</TEN_BENH>
+        <MA_BENH class="code" type="string_15">BENH22222</MA_BENH>
+        <MA_BENHKHAC class="code" type="string_255">BENHKHAC22222</MA_BENHKHAC>
+        <MA_LYDO_VVIEN class="detail" type="selection_1">1</MA_LYDO_VVIEN>
+        <MA_NOI_CHUYEN class="code" type="string_5">NODATA</MA_NOI_CHUYEN>
+        <MA_TAI_NAN class="code" type="int_1">1</MA_TAI_NAN>
+        <NGAY_VAO class="time" type="year_month_day_hour_minute">200012030000</NGAY_VAO>
+        <NGAY_RA class="time" type="year_month_day_hour_minute">200012030000</NGAY_RA>
+        <SO_NGAY_DTRI class="time" type="int_3">NODATA</SO_NGAY_DTRI>
+        <KET_QUA_DTRI class="detail" type="selection_1">5</KET_QUA_DTRI>
+        <TINH_TRANG_RV class="detail" type="selection_1">2</TINH_TRANG_RV>
+        <NGAY_TTOAN class="time" type="year_month_day">NODATA</NGAY_TTOAN>
+        <T_THUOC class="money" type="float_15_decimal_2">345.679</T_THUOC>
+        <T_VTYT class="money" type="float_15_decimal_2">345.679</T_VTYT>
+        <T_TONGCHI class="money" type="float_15_decimal_2">345.679</T_TONGCHI>
+        <T_BNTT class="money" type="float_15_decimal_2">345.679</T_BNTT>
+        <T_BNCCT class="money" type="float_15_decimal_2">345.679</T_BNCCT>
+        <T_BHTT class="money" type="float_15_decimal_2">345.679</T_BHTT>
+        <T_NGUONKHAC class="money" type="float_15_decimal_2">345.679</T_NGUONKHAC>
+        <T_NGOAIDS class="money" type="float_15_decimal_2">345.679</T_NGOAIDS>
+        <NAM_QT class="time" type="year">2000</NAM_QT>
+        <THANG_QT class="time" type="month">12</THANG_QT>
+        <MA_LOAI_KCB class="code" type="selection_1">1</MA_LOAI_KCB>
+        <MA_KHOA class="code" type="string_15">KHOA123</MA_KHOA>
+        <MA_CSKCB class="code" type="string_5">NODATA</MA_CSKCB>
+        <MA_KHUVUC class="code" type="selection_2">1</MA_KHUVUC>
+        <MA_PTTT_QT class="code" type="string_255">PTTT123</MA_PTTT_QT>
+        <CAN_NANG class="detail" type="float_5_decimal_2">5.75</CAN_NANG>
+    </Benh_Nhan>
+    <Benh_Nhan>
+        <MA_LK class="code" type="string_100">LK123123</MA_LK>
+        <STT class="number" type="int_10">1</STT>
+        <MA_BN class="code" type="string_100">BN123124</MA_BN>
+        <HO_TEN class="detail" type="string_255">NGUYỄN THỊ NGOẠI KHOA</HO_TEN>
+        <NGAY_SINH class="time" type="year_month_day">20000101</NGAY_SINH>
+        <GIOI_TINH class="detail" type="selection_1">3</GIOI_TINH>
+        <DIA_CHI class="detail" type="string_1024">28 phố Hàng Đậu, phường Trúc Bạch, Quận Ba Đình, Thành phố Hà Nội</DIA_CHI>
+        <MA_THE class="code" type="string_n">HS1231231222222 </MA_THE>
+        <MA_DKBD class="code" type="string_n">DKBD1001</MA_DKBD>
+        <GT_THE_TU class="time" type="year_month_day">20001203</GT_THE_TU>
+        <GT_THE_DEN class="time" type="year_month_day">20001203</GT_THE_DEN>
+        <MIEN_CUNG_CT class="time" type="year_month_day">20001205</MIEN_CUNG_CT>
+        <TEN_BENH class="detail" type="string_n">điên khùng</TEN_BENH>
+        <MA_BENH class="code" type="string_15">BENH22223</MA_BENH>
+        <MA_BENHKHAC class="code" type="string_255">BENHKHAC22223</MA_BENHKHAC>
+        <MA_LYDO_VVIEN class="detail" type="selection_1">1</MA_LYDO_VVIEN>
+        <MA_NOI_CHUYEN class="code" type="string_5">NODATA</MA_NOI_CHUYEN>
+        <MA_TAI_NAN class="code" type="int_1">1</MA_TAI_NAN>
+        <NGAY_VAO class="time" type="year_month_day_hour_minute">200012030000</NGAY_VAO>
+        <NGAY_RA class="time" type="year_month_day_hour_minute">200012030000</NGAY_RA>
+        <SO_NGAY_DTRI class="time" type="int_3">11</SO_NGAY_DTRI>
+        <KET_QUA_DTRI class="detail" type="selection_1">5</KET_QUA_DTRI>
+        <TINH_TRANG_RV class="detail" type="selection_1">3</TINH_TRANG_RV>
+        <NGAY_TTOAN class="time" type="year_month_day">NODATA</NGAY_TTOAN>
+        <T_THUOC class="money" type="float_15_decimal_2">345.679</T_THUOC>
+        <T_VTYT class="money" type="float_15_decimal_2">345.679</T_VTYT>
+        <T_TONGCHI class="money" type="float_15_decimal_2">345.679</T_TONGCHI>
+        <T_BNTT class="money" type="float_15_decimal_2">345.679</T_BNTT>
+        <T_BNCCT class="money" type="float_15_decimal_2">345.679</T_BNCCT>
+        <T_BHTT class="money" type="float_15_decimal_2">345.679</T_BHTT>
+        <T_NGUONKHAC class="money" type="float_15_decimal_2">345.679</T_NGUONKHAC>
+        <T_NGOAIDS class="money" type="float_15_decimal_2">345.679</T_NGOAIDS>
+        <NAM_QT class="time" type="year">2000</NAM_QT>
+        <THANG_QT class="time" type="month">12</THANG_QT>
+        <MA_LOAI_KCB class="code" type="selection_1">1</MA_LOAI_KCB>
+        <MA_KHOA class="code" type="string_15">KHOA123</MA_KHOA>
+        <MA_CSKCB class="code" type="string_5">NODATA</MA_CSKCB>
+        <MA_KHUVUC class="code" type="selection_2">2</MA_KHUVUC>
+        <MA_PTTT_QT class="code" type="string_255">PTTT124</MA_PTTT_QT>
+        <CAN_NANG class="detail" type="float_5_decimal_2">NODATA</CAN_NANG>
+    </Benh_Nhan>
+</Cac_Benh_Nhan>
