@@ -1,5 +1,4 @@
 from openpyxl import load_workbook
-from openpyxl.styles import NamedStyle
 from yattag import Doc, indent
 import datetime
 
@@ -10,13 +9,14 @@ ws = wb.worksheets[0]
 doc, tag, text = Doc().tagtext()
 
 xml_header = '<?xml version="1.0" encoding="UTF-8"?>'
-xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"></xs:schema>'
+#xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"></xs:schema>'
 
 doc.asis(xml_header)
-doc.asis(xml_schema)
+#doc.asis(xml_schema)
 
 current_date = datetime.datetime.now()
 temp_date = datetime.datetime(2020, 11, 22)
+#...
 
 with tag('Cac_Benh_Nhan'):
     # Use ws.max_row for all rows
@@ -24,38 +24,38 @@ with tag('Cac_Benh_Nhan'):
         col = [cell.value for cell in col]
         count = 0
         with tag("Benh_Nhan"):
-            with tag("MA_LK", klass='code', type='string_100'):
+            with tag("node", klass='code', type='string_100', id='MA_LK'):
                 if col[count] == None or len(str(col[count])) > 100:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("STT", klass='number', type='int_10'):
+            with tag("node", klass='number', type='int_10', id='STT'):
                 if col[count] == None or len(str(col[count])) > 10:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_BN", klass='code', type='string_100'):
+            with tag("node", klass='code', type='string_100', id='MA_BN'):
                 if col[count] == None or len(col[count]) > 100:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("HO_TEN", klass='detail', type='string_255'):
+            with tag("node", klass='code', type='string_255', id='HO_TEN'):
                 if col[count] == None or len(col[count]) > 255:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("NGAY_SINH", klass='time', type='year_month_day'):
+            with tag("node", klass='time', type='year_month_day', id='NGAY_SINH'):
                 if type(col[count]) is datetime.datetime:
                     temp_date = col[count]
                     text(col[count].strftime("%Y%m%d"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("GIOI_TINH", klass='detail', type='selection_1'):
+            with tag("node", klass='detail', type='selection_1', id='GIOI_TINH'):
                 if col[count] == None:
                     text("NODATA")
                 elif col[count] == "Nam":
@@ -65,61 +65,61 @@ with tag('Cac_Benh_Nhan'):
                 elif col[count] == "Chưa xác định":
                     text('3')
                 count += 1
-            with tag("DIA_CHI", klass='detail', type='string_1024'):
+            with tag("node", klass='code', type='string_1024', id='DIA_CHI'):
                 if col[count] == None or len(col[count]) > 1024:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_THE", klass='code', type='string_n'):
+            with tag("node", klass='code', type='string_n', id='MA_THE'):
                 if col[count] == None:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_DKBD", klass='code', type='string_n'):
+            with tag("node", klass='code', type='string_n', id='MA_DKBD'):
                 if col[count] == None:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1 
-            with tag("GT_THE_TU", klass='time', type='year_month_day'):
+            with tag("node", klass='time', type='year_month_day', id='GT_THE_TU'):
                 if type(col[count]) is datetime.datetime:
                     text(col[count].strftime("%Y%m%d"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("GT_THE_DEN", klass='time', type='year_month_day'):
+            with tag("node", klass='time', type='year_month_day', id='GT_THE_DEN'):
                 if type(col[count]) is datetime.datetime:
                     text(col[count].strftime("%Y%m%d"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("MIEN_CUNG_CT", klass='time', type='year_month_day'):
+            with tag("node", klass='time', type='year_month_day', id='MIEN_CUNG_CT'):
                 if type(col[count]) is datetime.datetime:
                     text(col[count].strftime("%Y%m%d"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("TEN_BENH", klass='detail', type='string_n'):
+            with tag("node", klass='code', type='string_n', id='TEN_BENH'):
                 if  col[count] == None:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_BENH", klass='code', type='string_15'):
+            with tag("node", klass='code', type='string_15', id='MA_BENH'):
                 if col[count] == None or len(col[count]) >= 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_BENHKHAC", klass='code', type='string_255'):
+            with tag("node", klass='code', type='string_255', id='MA_BENHKHAC'):
                 if col[count] == None or len(col[count]) >= 255:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_LYDO_VVIEN", klass='detail', type='selection_1'):
+            with tag("node", klass='detail', type='selection_1', id='MA_LYDO_VVIEN'):
                 if col[count] == None:
                     text("NODATA")
                 elif col[count] == "Đúng tuyến":
@@ -131,37 +131,37 @@ with tag('Cac_Benh_Nhan'):
                 elif col[count] == "Thông tuyến":
                     text("4")
                 count += 1
-            with tag("MA_NOI_CHUYEN", klass='code', type='string_5'):
+            with tag("node", klass='code', type='string_5', id='MA_NOI_CHUYEN'):
                 if col[count] == None or len(col[count]) > 5:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_TAI_NAN", klass='code', type='int_1'):
+            with tag("node", klass='number', type='int_1', id='MA_TAI_NAN'):
                 if type(col[count]) == int and len(str(col[count])) == 1:
                     text(col[count])
                 else:
                     text("NODATA")
                 count += 1
-            with tag("NGAY_VAO", klass='time', type='year_month_day_hour_minute'):
+            with tag("node", klass='time', type='year_month_day_hour_minute', id='NGAY_VAO'):
                 if type(col[count]) is datetime.datetime:
                     text(col[count].strftime("%Y%m%d%H%M"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("NGAY_RA", klass='time', type='year_month_day_hour_minute'):
+            with tag("node", klass='time', type='year_month_day_hour_minute', id='NGAY_RA'):
                 if type(col[count]) is datetime.datetime:
                     text(col[count].strftime("%Y%m%d%H%M"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("SO_NGAY_DTRI", klass='time', type='int_3'):
+            with tag("node", klass='number', type='int_3', id='SO_NGAY_DTRI'):
                 if type(col[count]) == int and len(str(col[count])) <= 3:
                     text(col[count])
                 else:
                     text("NODATA")
                 count += 1
-            with tag("KET_QUA_DTRI", klass='detail', type='selection_1'):
+            with tag("node", klass='detail', type='selection_1', id='KET_QUA_DTRI'):
                 if col[count] == None:
                     text("NODATA")
                 elif col[count] == "Khỏi":
@@ -175,7 +175,7 @@ with tag('Cac_Benh_Nhan'):
                 elif col[count] == "Tử vong":
                     text("5")
                 count += 1
-            with tag("TINH_TRANG_RV", klass='detail', type='selection_1'):
+            with tag("node", klass='detail', type='selection_1', id='TINH_TRANG_RV'):
                 if col[count] == None:
                     text("NODATA")
                 if col[count] == "Ra viện":
@@ -187,73 +187,73 @@ with tag('Cac_Benh_Nhan'):
                 elif col[count] == "Xin ra viện":
                     text('4')
                 count += 1
-            with tag("NGAY_TTOAN", klass='time', type='year_month_day'):
+            with tag("node", klass='time', type='year_month_day', id='NGAY_TTOAN'):
                 if type(col[count]) is datetime.datetime:
                     text(col[count].strftime("%Y%m%d%H%M"))
                 else:
                     text("NODATA")
                 count += 1
-            with tag("T_THUOC", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_THUOC'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_VTYT", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_VTYT'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_TONGCHI", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_TONGCHI'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_BNTT", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_BNTT'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_BNCCT", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_BNCCT'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_BHTT", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_BHTT'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_NGUONKHAC", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_NGUONKHAC'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("T_NGOAIDS", klass='money', type='float_15_decimal_2'):
+            with tag("node", klass='number', type='float_15_decimal_2', id='T_NGOAIDS'):
                 if col[count] == None or len(str(col[count])) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("NAM_QT", klass='time', type='year'):
+            with tag("node", klass='time', type='year', id='NAM_QT'):
                 if type(col[count]) == int and len(str(col[count])) == 4:
                     text(col[count])
                 else:
                     text("NODATA")
                 count += 1
-            with tag("THANG_QT", klass='time', type='month'):
+            with tag("node", klass='time', type='month', id='THANG_QT'):
                 if type(col[count]) == int and len(str(col[count])) == 2:
                     text(col[count])
                 else:
                     text("NODATA")
                 count += 1
-            with tag("MA_LOAI_KCB", klass='code', type='selection_1'):
+            with tag("node", klass='detail', type='selection_1', id='MA_LOAI_KCB'):
                 if col[count] == None:
                     text("NODATA")
                 elif col[count] == "Khám bệnh":
@@ -263,19 +263,19 @@ with tag('Cac_Benh_Nhan'):
                 elif col[count] == "Điều trị nội trú":
                     text('3')
                 count += 1
-            with tag("MA_KHOA", klass='code', type='string_15'):
+            with tag("node", klass='code', type='string_15', id='MA_KHOA'):
                 if col[count] == None or len(col[count]) > 15:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_CSKCB", klass='code', type='string_5'):
+            with tag("node", klass='code', type='string_5', id='MA_CSKCB'):
                 if col[count] == None or len(col[count]) > 5:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("MA_KHUVUC", klass='code', type='selection_2'):
+            with tag("node", klass='detail', type='selection_2', id='MA_KHUVUC'):
                 if col[count] == None:
                     text("NODATA")
                 if col[count] == "K1":
@@ -285,13 +285,13 @@ with tag('Cac_Benh_Nhan'):
                 elif col[count] == "K3":
                     text('3')
                 count += 1
-            with tag("MA_PTTT_QT", klass='code', type='string_255'):
+            with tag("node", klass='code', type='string_255', id='MA_PTTT_QT'):
                 if col[count] == None or len(col[count]) > 255:
                     text("NODATA")
                 else:
                     text(col[count])
                 count += 1
-            with tag("CAN_NANG", klass='detail', type='float_5_decimal_2'):
+            with tag("node", klass='number', type='float_5_decimal_2', id='CAN_NANG'):
                 if (current_date - temp_date).days <= 365:
                     if type(col[count]) == float and len(str(col[count])) <= 5:
                         text(col[count])
@@ -307,5 +307,5 @@ result = indent(
     indentation = '    '
 )
 
-with open("patient_names.xml", "w") as f:
+with open("output/patient_names.xml", "w") as f:
     f.write(result)
