@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patient>
+    <name>
+        <use  value="official" />
+        <family  value="Thai" />
+        <given  value="Quang" />
+        <given  value="Nguyen" />
+    </name>
+    <name>
+        <use  value="nickname" />
+        <given  value="Jack" />
+    </name>
+    <telecom>
+        <system  value="phone" />
+        <value  value="+84913981394" />
+        <use  value="mobile" />
+        <rank  value="1" />
+    </telecom>
+    <birthdate>
+        <value  value="2000-12-03" />
+    </birthdate>
+    <address>
+        <use  value="home" />
+        <text  value="33 Ngo Thoi Nham, Thuan Hoa, Hue, Thua Thien Hue 49000" />
+        <line  value="33 Ngo Thoi Nham" />
+        <ward  value="Thuan Hoa" />
+        <city  value="Hue" />
+        <province  value="Thua Thien Hue" />
+        <postalcode  value="49000" />
+        <period>
+            <start  value="2000" />
+            <end  value="2018" />
+        </period>
+    </address>
+    <address>
+        <use  value="temporary" />
+        <text  value="Samsora Riverside, Binh Thang, Di An, Binh Duong 75000" />
+        <line  value="Samsora Riverside" />
+        <ward  value="Binh Thang" />
+        <city  value="Di An" />
+        <province  value="Binh Duong" />
+        <postalcode  value="75000" />
+        <period>
+            <start  value="2018" />
+            <end  value="2020" />
+        </period>
+    </address>
+    <address>
+        <use  value="temporary" />
+        <text  value="495/18/12 To Hien Thanh, 14, 10, Ho Chi Minh City 70000" />
+        <line  value="495/18/12 To Hien Thanh" />
+        <ward  value="14" />
+        <district  value="10" />
+        <city  value="Ho Chi Minh City" />
+        <postalcode  value="70000" />
+        <period>
+            <start  value="2020" />
+        </period>
+    </address>
+    <gender  value="male" />
+    <contact>
+        <relationship  value="mom" />
+        <name>
+            <use  value="official" />
+            <family  value="Bui" />
+            <given  value="The" />
+            <given  value="Ngoc Diep" />
+        </name>
+        <telecom>
+            <system  value="phone" />
+            <value  value="+84942440815" />
+            <use  value="mobile" />
+        </telecom>
+        <address>
+            <use  value="home" />
+            <text  value="33 Ngo Thoi Nham, Thuan Hoa, Hue, Thua Thien Hue 49000" />
+            <line  value="33 Ngo Thoi Nham" />
+            <ward  value="Thuan Hoa" />
+            <city  value="Hue" />
+            <province  value="Thua Thien Hue" />
+            <postalcode  value="49000" />
+            <period>
+                <start  value="1999" />
+            </period>
+        </address>
+        <gender  value="female" />
+    </contact>
+    <hospital>
+        <details>
+            <code>
+                <lk  value="LK123122" />
+                <bn  value="BN123123" />
+                <the>
+                    <value  value="HS123123" />
+                    <period>
+                        <start  value="2020-12-03" />
+                        <end  value="2021-12-03" />
+                    </period>
+                </the>
+                <dkbd  value="DKBD1000" />
+                <tainan  value="1" />
+                <loaikcb  value="Kham Benh" />
+                <khoa  value="KHOA123" />
+                <cskcb  value="CSKCB3" />
+                <khuvuc  value="K1" />
+                <ptttqt  value="PTTT123" />
+            </code>
+            <disease>
+                <name  value="Covid-19" />
+                <code  value="BENH2222" />
+                <other>
+                    <code  value="BENHKHAC3333" />
+                </other>
+            </disease>
+        </details>
+        <checkin>
+            <lydo  value="Dung Tuyen" />
+            <period>
+                <value  value="2019-08-03" />
+            </period>
+        </checkin>
+        <checkout>
+            <songaydtri  value="31" />
+            <ketquadtri  value="Chua khoi" />
+            <ttravien  value="Ra vien" />
+            <period>
+                <value  value="2019-09-03" />
+            </period>
+            <expense>
+                <thuoc  value="12.34" />
+                <vtyt  value="13.24" />
+                <tongchi  value="32.14" />
+                <bntt  value="23.14" />
+                <bncct  value="14.23" />
+                <bhtt  value="42.13" />
+                <nguonkhac  value="42.31" />
+                <ngoaids  value="43.12" />
+                <period>
+                    <value  value="2019-09-01" />
+                </period>
+            </expense>
+        </checkout>
+    </hospital>
+</patient>

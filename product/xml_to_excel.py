@@ -37,6 +37,6 @@ def to_Excel(mdlist):
     print("Process completed")
     return
 
-result = readFile("output/patient_names.xml")
+result = readFile("output/patient1.xml")
 if result:
     to_Excel(result)
